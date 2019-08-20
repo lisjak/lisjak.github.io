@@ -8,6 +8,7 @@ body {
     -webkit-animation: Gradient 7s ease infinite;
     -moz-animation: Gradient 7s ease infinite;
     animation: Gradient 7s ease infinite;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
 @-webkit-keyframes Gradient {
@@ -77,6 +78,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 100%;
+    min-width: 60%;
     min-height: 50%;
     box-shadow:
         2px 1px 0px rgba(0, 0, 0, 0.25), 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -122,10 +124,11 @@ body {
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 17vw;
-    line-height: 40px;
-    margin-left: 10px;
+    line-height: 0px;
+    /* margin-left: 10px; */
     margin: 0;
     text-align: center;
+    border: 2vh solid #2C7BBE;
     /* background: #2C7BBE; */
     /* position: absolute; */
     /* top: 0%;
@@ -141,7 +144,7 @@ h6 {
     line-height: 0;
     text-align: center;
     letter-spacing: -0.05em;
-    border: 10px solid #EB6761;
+    border: 2vh solid #EB6761;
 }
 
 .header {
@@ -150,6 +153,7 @@ h6 {
     letter-spacing: -0.2vw;
     text-align: left;
     border-bottom: 10px solid #2C7BBE;
+
 }
 
 .subheader {
@@ -163,7 +167,7 @@ h6 {
 
 .content {
     border: 1px solid white;
-    /* border-top: transparent; */
+    border-top: 1px solid #2C7BBE;
 }
 
 .content p {
@@ -178,21 +182,21 @@ h6 {
     font-family: 'PT Mono';
     font-size: 2vw;
     text-align: left;
-    column-count: 4;
+    column-count: 3;
     /* word-break: break-all; */
 }
 
 
 .content a {
     text-decoration: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px dashed #EB6761;
     color: white;
     transition: 0.5s ease;
 }
 
 .content a:hover {
     text-decoration: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px dashed #2C7BBE;
     color: white;
 }
 
@@ -249,7 +253,7 @@ i {
 }
 
 .dev a {
-    border-bottom: 10px solid #EB6761;
+    border-bottom: 1.5vh solid #EB6761;
     text-align: left;
 }
 
@@ -263,7 +267,7 @@ i {
 }
 
 .des a {
-    border-bottom: 10px solid #2C7BBE;
+    border-bottom: 1.5vh solid #2C7BBE;
 }
 
 .dat {
@@ -271,7 +275,7 @@ i {
 }
 
 .dat a {
-    border-bottom: 10px solid #EB6761;
+    border-bottom: 1.5vh solid #EB6761;
 }
 
 .footer {
@@ -312,7 +316,7 @@ i {
         /* 1px 1px #EB6761,
         2px 2px #EB6761,
         3px 3px #EB6761; */
-        4px 4px 0px #2C7BBE, 15px 15px 0px rgba(0, 0, 0, 0.15);
+        4px 4px 0px #2C7BBE, 12px 12px 0px rgba(0, 0, 0, 0.15);
     -webkit-transform: translateX(-5px);
     transform: translateX(-5px);
 }
