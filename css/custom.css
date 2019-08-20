@@ -2,11 +2,12 @@ body {
     width: 100wh;
     height: 100vh;
     color: #fff;
-    background: linear-gradient(-45deg, #93E5F6, #F0A7E9, #B1A7F0, #23D5AB);
+    background: linear-gradient(-90deg, #C2DEFF, #FFC2C2);
+    /*background: linear-gradient(-45deg, #93E5F6, #F0A7E9, #B1A7F0, #23D5AB);*/
     background-size: 400% 400%;
-    -webkit-animation: Gradient 5s ease infinite;
-    -moz-animation: Gradient 5s ease infinite;
-    animation: Gradient 5s ease infinite;
+    -webkit-animation: Gradient 7s ease infinite;
+    -moz-animation: Gradient 7s ease infinite;
+    animation: Gradient 7s ease infinite;
 }
 
 @-webkit-keyframes Gradient {
@@ -51,97 +52,267 @@ body {
     }
 }
 
+.topper {
+    min-width: 35%;
+    border-radius: 4px;
+    min-height: 5%;
+    /* background-color: rgba(255, 255, 255, .3); */
+    background-color: white;
+    color: black;
+    padding: 0;
+    position: absolute;
+    left: 42.2%;
+    top: -7.0%;
+    margin: 10%;
+    padding: 1%;
+    box-shadow:
+        2px 0px 0px rgba(0, 0, 0, 0.25), 4px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
 .main {
     border: 10px solid white;
     margin: 10%;
-    padding: 10%;
+    padding: 2%;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     max-width: 100%;
     min-height: 50%;
+    box-shadow:
+        2px 1px 0px rgba(0, 0, 0, 0.25), 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    /* margin-bottom: 10vh; */
+    /* background-color: rgba(255, 255, 255, .3); */
+    /* background-color: cornflowerblue; */
+    padding: 10%;
+    text-align: center;
+    /* text-shadow: 2px 2px 1px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 7px 7px black;
+    color: black; */
+}
+
+.leftbrack {
+    font-family: 'Playfair Display', serif;
+    font-size: 30vw;
+    text-align: left;
+    z-index: -1;
+    line-height: 0;
+    margin-top: -30%;
+    margin-bottom: 30%;
+    text-shadow:
+        3px 3px 0px #EB6761, 6px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.rightbrack {
+    font-family: 'Playfair Display', serif;
+    font-size: 30vw;
+    line-height: 0;
+    top: -10%;
+    text-align: right;
+    z-index: -1;
+    margin-top: -30%;
+    margin-bottom: 30%;
+    text-shadow:
+        3px 3px 0px #2C7BBE, 6px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
 
-h1,
-h6 {
+h1 {
     font-family: 'Playfair Display', serif;
-    /* font-weight: 300; */
-    /* font-size: 20em; */
-    font-size: 20vw;
-    line-height: 7vw;
+    font-size: 17vw;
+    line-height: 40px;
+    margin-left: 10px;
+    margin: 0;
     text-align: center;
+    /* background: #2C7BBE; */
     /* position: absolute; */
     /* top: 0%;
 	right: 0;
 	left: 0%; */
 }
 
-p {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 2vw;
+h6 {
+    font-family: 'Playfair Display', serif;
+    font-size: 13vw;
+    margin-top: 1em;
+    margin-bottom: 2vh;
+    line-height: 0;
     text-align: center;
+    letter-spacing: -0.05em;
+    border: 10px solid #EB6761;
+}
+
+.header {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5vw;
+    letter-spacing: -0.2vw;
+    text-align: left;
+    border-bottom: 10px solid #2C7BBE;
+}
+
+.subheader {
+    font-family: 'Playfair Display', serif;
+    font-size: 3vw;
+    letter-spacing: -0.1vw;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 10px solid #EB6761;
+}
+
+.content {
+    border: 1px solid white;
+    /* border-top: transparent; */
+}
+
+.content p {
+    font-family: 'PT Mono';
+    font-size: 1.6vw;
+    text-align: right;
+    line-height: 2.8vw;
+    /* word-break: break-all; */
+}
+
+.content ul {
+    font-family: 'PT Mono';
+    font-size: 2vw;
+    text-align: left;
+    column-count: 4;
     /* word-break: break-all; */
 }
 
 
+.content a {
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    color: white;
+    transition: 0.5s ease;
+}
 
-
-
-img {
-    padding-top: 2em;
-    max-width: 100%;
-    max-height: 100%;
+.content a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: white;
 }
 
 
+b {
+    font-family: 'PT Mono';
+    border-bottom: 5px solid #EB6761;
+    line-height: 0px;
+    font-weight: normal;
+}
 
-/* .break-word {
-  word-wrap: break-word;
+i {
+    font-family: 'PT Mono';
+    border-bottom: 5px solid #2C7BBE;
+    line-height: 0px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.button {
+    border: 1px solid white;
+}
+
+
+.knife img {
+    filter: invert(100%);
+    transform: rotate(45deg);
+    float: left;
+    margin-top: -10%;
+    margin-bottom: 5%;
+}
+
+.knife a {
+    font-family: 'Playfair Display', serif;
+    font-size: 6.5vw;
+    color: white;
+    /* line-height: 13vh; */
+    letter-spacing: -0.07em;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 10px solid cornflowerblue;
+    transition: 1s ease;
+}
+
+.knife a:hover {
+    font-family: 'Playfair Display', serif;
+    font-size: 6.5vw;
+    color: white;
+    /* margin-top: 1em; */
+    /* line-height: 13vh; */
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dev a {
+    border-bottom: 10px solid #EB6761;
+    text-align: left;
+}
+
+/* .dev:hover {
+    border-bottom: 10px solid #EB6761;
+    transition: width 2s;
 } */
 
-
-.typewriter {
-    max-width: 100%;
-    max-height: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-wrap: wrap;
-    overflow: hidden;
-    overflow-wrap: anywhere;
-    border-right: .30em solid white;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em;
-    /* Adjust as needed */
-    animation:
-        typing 3.5s steps(30, end),
-        blinking-cursor .5s step-end infinite;
+.des {
+    text-align: center;
 }
 
-/* The typing effect */
-@keyframes typing {
-    from {
-        width: 0
-    }
+.des a {
+    border-bottom: 10px solid #2C7BBE;
+}
 
-  to {
-      width: 100%
-  }
-  }
+.dat {
+    text-align: right;
+}
 
-  /* The typewriter cursor effect */
-  @keyframes blinking-cursor {
+.dat a {
+    border-bottom: 10px solid #EB6761;
+}
 
-      from,
-      to {
-          border-color: transparent
-      }
+.footer {
+    font-family: Cutive Mono;
+    font-size: 1.7vw;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    padding-bottom: 1vh;
+    margin-top: 1vh;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, .3);
 
-      50% {
-          border-color: white;
-      }
-  }
+}
+
+.about img {
+    max-width: 25%;
+    border: 1px solid white;
+    float: right;
+    margin: 2%;
+    margin-top: 3%;
+    transition: 0.5s ease;
+    box-shadow:
+        /* 1px 1px #EB6761,
+        2px 2px #EB6761,
+        3px 3px #EB6761; */
+        3px 3px 0px #EB6761, 9px 8px 0px rgba(0, 0, 0, 0.15);
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+}
+
+.about img:hover {
+    box-shadow:
+        1px 0px #2C7BBE,
+        1px 1px #2C7BBE,
+        1px 1px #2C7BBE;
+    box-shadow:
+        /* 1px 1px #EB6761,
+        2px 2px #EB6761,
+        3px 3px #EB6761; */
+        4px 4px 0px #2C7BBE, 15px 15px 0px rgba(0, 0, 0, 0.15);
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+}
