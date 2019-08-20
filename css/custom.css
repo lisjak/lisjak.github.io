@@ -8,7 +8,7 @@ body {
     -webkit-animation: Gradient 7s ease infinite;
     -moz-animation: Gradient 7s ease infinite;
     animation: Gradient 7s ease infinite;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
 }
 
 @-webkit-keyframes Gradient {
@@ -123,12 +123,12 @@ body {
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 17vw;
+    font-size: 16vw;
     line-height: 0px;
     /* margin-left: 10px; */
+    padding-top: 5%;
     margin: 0;
     text-align: center;
-    border: 2vh solid #2C7BBE;
     /* background: #2C7BBE; */
     /* position: absolute; */
     /* top: 0%;
@@ -138,13 +138,14 @@ h1 {
 
 h6 {
     font-family: 'Playfair Display', serif;
-    font-size: 13vw;
+    font-size: 12vw;
     margin-top: 1em;
     margin-bottom: 2vh;
+    padding-bottom: 5%;
     line-height: 0;
     text-align: center;
     letter-spacing: -0.05em;
-    border: 2vh solid #EB6761;
+    background: #EB6761(0.5);
 }
 
 .header {
