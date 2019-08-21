@@ -1,3 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    opacity: 0;
+    transform: translate(0, 100px);
+    transition: all 4s;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 body {
     width: 100wh;
     height: 100vh;
@@ -53,10 +68,11 @@ body {
 }
 
 .topper {
+    color: gray;
     font-family: Cutive Mono;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     text-align: center;
     text-transform: uppercase;
     display: flex;
@@ -76,7 +92,6 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(255, 255, 255, .3);
-    color: black;
 }
 
 
@@ -306,6 +321,9 @@ i {
     border: 1px solid white;
 }
 
+.knife {
+    margin-bottom: 5%;
+}
 
 .knife img {
     filter: invert(100%);
@@ -342,11 +360,6 @@ i {
     border-bottom: 1.5vh solid #EB6761;
     text-align: left;
 }
-
-/* .dev:hover {
-    border-bottom: 10px solid #EB6761;
-    transition: width 2s;
-} */
 
 .des {
     text-align: center;

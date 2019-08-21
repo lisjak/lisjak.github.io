@@ -47,6 +47,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+<script src="fadein.js"></script>
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="./images/favicon.png" />
@@ -55,35 +56,50 @@
   <body>
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="topper">
+
+  <div class="topper">
       <a href="#about">01. About</a> | <a href="#skills">02. Skills</a> |
-      <a href="#contact">03. Contact</a> || <a href="../media/resume.pdf">Resumé</a>
+      <a href="#contact">03. Contact</a> ||
+      <a href="../media/resume.pdf">Resumé</a>
     </div>
+
+
+
     <div class="main">
-      <div class="title">
+
+
+
+    <div class="title">
         <h1>Lisa N.</h1>
         <h6>Jakubczyk</h6>
       </div>
-      <div class="leftbrack">{</div>
+    <div class="leftbrack">{</div>
       <div class="rightbrack">}</div>
       <br />
 
-      <div class="knife">
-        <div class="dev"><a href="#developer">Developer.</a><br /></div>
-        <div class="des"><a href="#designer">Designer.</a><br /></div>
-        <div class="dat"><a href="#dataanalyst">Data Analyst.</a><br /></div>
 
+
+
+      <div class="knife">
+
+        <section><div class="dev"><a href="#developer">Developer.</a><br /></div></section>
+        <section><div class="des"><a href="#designer">Designer.</a><br /></div></section>
+        <section><div class="dat"><a href="#dataanalyst">Data Analyst.</a><br /></div></section>
         <!-- <img src="http://cdn.onlinewebfonts.com/svg/img_499407.png" width="30%" style="float: left" />
 
                 <div class = "button">Get in touch!</div> -->
       </div>
+    </section>
+
+    <section>
       <a id="about"><div class="header">01. About</div></a>
       <div class="about">
         <img src="../media/headshot.jpg" />
 
         <div class="content">
           <p>
-            Lisa N. Jakubczyk is an <b>engineering utility knife</b> and <i>cross-disciplinary problem solver</i> based in
+            Lisa N. Jakubczyk is an <b>engineering utility knife</b> and
+            <i>cross-disciplinary problem solver</i> based in
             <b>New York City</b> currently working as a freelance developer
             after graduating from the
             <a href="https://www.gracehopper.com/"
@@ -94,10 +110,15 @@
           </p>
         </div>
       </div>
+    </section>
 
-    <a id="skills"><div class="header">02. Skills</div></a>
+
+    <section>
+      <a id="skills"><div class="header">02. Skills</div></a>
 
       <div class="content">
+
+        <section>
         <div class="subheader">Developing</div>
         <a id="developer">
           <ul>
@@ -130,6 +151,9 @@
             <li>Git</li>
           </ul></a
         >
+        </section>
+
+        <section>
         <div class="subheader">Designing</div>
         <a id="designer">
           <ul>
@@ -140,6 +164,8 @@
             <li>Final Cut Pro</li>
           </ul></a
         >
+        </section>
+        <section>
         <div class="subheader">Data Analyzing</div>
         <a id="dataanalyst">
           <ul>
@@ -150,8 +176,11 @@
             <li>HEG</li>
           </ul></a
         >
+        </section>
       </div>
+    </section>
 
+<section>
       <a id="contact"><div class="header">03. Contact</div></a>
       <div class="content">
         <p>
@@ -183,7 +212,9 @@
           </div>
         </div>
       </div>
+    </section>
     </div>
+    </section>
     <div class="footer">Designed and built by Lisa N. Jakubczyk.</div>
   </body>
 </html>
