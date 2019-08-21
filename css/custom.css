@@ -16,8 +16,11 @@ section.visible {
 body {
     width: 100wh;
     height: 100vh;
-    color: #fff;
+    /* color: #fff; */
+    color: white;
+    /* background: white; */
     background: linear-gradient(-90deg, #C2DEFF, #FFC2C2);
+    /* background: linear-gradient(-90deg, #f0f6ff, #fff0f7); */
     background-size: 400% 400%;
     -webkit-animation: Gradient 7s ease infinite;
     -moz-animation: Gradient 7s ease infinite;
@@ -129,9 +132,15 @@ body {
 .title {
     padding: 10%;
     text-align: center;
+    color: white;
+}
+
+.title hover {
+    filter: invert();
 }
 
 .leftbrack {
+    color: white;
     font-family: 'Playfair Display', serif;
     font-size: 30vw;
     text-align: left;
@@ -143,6 +152,7 @@ body {
 }
 
 .rightbrack {
+    color: white;
     font-family: 'Playfair Display', serif;
     font-size: 30vw;
     line-height: 0;
@@ -162,6 +172,7 @@ h1 {
     margin: 0;
     text-align: center;
     text-shadow: 3px 3px 0px #2C7BBE, 6px 6px 0px rgba(0, 0, 0, 0.15);
+
 }
 
 h6 {
@@ -180,9 +191,15 @@ h6 {
 .header {
     font-family: 'Playfair Display', serif;
     font-size: 4.5vw;
+    line-height: 3.8vw;
     letter-spacing: -0.2vw;
     text-align: left;
+    /* border: 1px solid white; */
     border-bottom: 10px solid #2C7BBE;
+    background: rgba(255, 255, 255, 0.70);
+    padding: 1%;
+    color: black;
+    z-index: 1;
 }
 
 .subheader {
@@ -192,6 +209,7 @@ h6 {
     text-align: center;
     text-transform: uppercase;
     border-bottom: 10px solid #EB6761;
+    color: black;
 }
 
 .content {
@@ -200,11 +218,12 @@ h6 {
     border-top: 1px solid #2C7BBE;
     margin-bottom: 5%;
     padding: 1.5%;
+    z-index: 2;
 }
 
 .content p {
     font-family: 'PT Mono';
-    font-size: 1.6vw;
+    font-size: 1.5vw;
     text-align: right;
     line-height: 2.8vw;
     color: gray;
@@ -212,11 +231,16 @@ h6 {
 }
 
 .content ul {
+    /* list-style-image: url('sqpurple.gif'); */
+    list-style: '▹ ';
     font-family: 'PT Mono';
     color: gray;
-    font-size: 2vw;
-    text-align: left;
+    font-size: 1.5vw;
+    letter-spacing: 0.2em;
+    line-height: 2.8vw;
+    text-align: justify;
     column-count: 3;
+    list-style-image: url('sqpurple.gif');
     /* word-break: break-all; */
 }
 
@@ -336,7 +360,7 @@ i {
 .knife a {
     font-family: 'Playfair Display', serif;
     font-size: 6.5vw;
-    color: white;
+    color: black;
     /* line-height: 13vh; */
     letter-spacing: -0.07em;
     font-weight: bold;
@@ -348,7 +372,7 @@ i {
 .knife a:hover {
     font-family: 'Playfair Display', serif;
     font-size: 6.5vw;
-    color: white;
+    color: black;
     /* margin-top: 1em; */
     /* line-height: 13vh; */
     letter-spacing: 0.2em;
