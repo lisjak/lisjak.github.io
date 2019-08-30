@@ -79,13 +79,13 @@ background: white;
 
 section {
     opacity: 0;
-    transform: translate(0, 100px);
+    /* transform: translate(0, 10px); */
     transition: all 2s;
 }
 
 section.visible {
     opacity: 1;
-    transform: translate(0, 0);
+    /* transform: translate(0, 0); */
 }
 
 body {
@@ -440,10 +440,9 @@ h6 {
     margin: 2%;
     margin-top: 3%;
     transition: 0.5s ease;
-    box-shadow: 3px 3px 0px #bf692c, 0.4em 0.5em 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 3px 3px 0px #4096d3, 0.4em 0.5em 0px rgba(0, 0, 0, 0.15);
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
-    filter: invert();
 }
 
 .icon1 img:hover {
@@ -453,7 +452,7 @@ h6 {
     margin: 2%;
     margin-top: 3%;
     transition: 0.5s ease;
-    box-shadow: 4px 2px 0px #35d4d6, 8px 8px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 4px 2px 0px #ca2b29, 8px 8px 0px rgba(0, 0, 0, 0.15);
     -webkit-transform: translateY(-6px);
     transform: translateY(-6px);
 }
@@ -465,10 +464,9 @@ h6 {
     margin: 2%;
     margin-top: 3%;
     transition: 0.5s ease;
-    box-shadow: 3px 3px 0px #35d4d6, 0.4em 0.5em 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 3px 3px 0px #ca2b29, 0.4em 0.5em 0px rgba(0, 0, 0, 0.15);
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
-    filter: invert();
 }
 
 .icon2 img:hover {
@@ -478,7 +476,7 @@ h6 {
     margin: 2%;
     margin-top: 3%;
     transition: 0.5s ease;
-    box-shadow: 4px 2px 0px #bf692c, 8px 8px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 4px 2px 0px #4096d3, 8px 8px 0px rgba(0, 0, 0, 0.15);
     -webkit-transform: translateY(-6px);
     transform: translateY(-6px);
 
@@ -523,12 +521,12 @@ i {
 
 
 .knife a {
-    font-family: 'Playfanavir Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 6.5vw;
     color: black;
     line-height: 20vh;
     letter-spacing: -0.09em;
-    font-weight: normal;
+    font-weight: bold;
     text-decoration: none;
     transition: 1s ease;
     margin-top: 15%;
