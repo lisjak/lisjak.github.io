@@ -16,7 +16,7 @@ html {
     /* height: 100%;
     width: 100%; */
     background-size: 400% 400%;
-    background: linear-gradient(to top, #ff5858, #f857a6);
+    background: linear-gradient(to top, white, white);
 }
 
 
@@ -232,7 +232,8 @@ align-content: flex-end; */
 .title {
     /* margin-bottom: 10%; */
     padding-right: 0%;
-    font-family: GT-Eesti-Pro-Text-Trial-Book-Italic;
+    font-family: 'GT-Eesti-Pro-Text-Trial-Book-Italic';
+    /* font-family: 'GT-Sectra-Display-Trial-Medium'; */
     width: 50%;
     height: 100%;
     text-align: center;
@@ -299,10 +300,23 @@ align-content: flex-end; */
 }
 
 @font-face {
+    font-family: 'GT-Sectra-Fine-Trial-Book-Italic';
+    src: url("../GT-Sectra-Fine-Trial-Book-Italic.otf");
+}
+
+@font-face {
     font-family: 'GT-Sectra-Display-Trial-Medium';
     src: url("../GT-Sectra-Display-Trial-Medium.otf");
+}
+
+@font-face {
     font-family: 'GT-Eesti-Pro-Text-Trial-Book-Italic';
     src: url("../GT-Eesti-Pro-Text-Trial-Book-Italic.otf");
+    }
+
+ @font-face {
+    font-family: 'GT-Sectra-Fine-Trial-Bold-Italic';
+    src: url("../GT-Sectra-Fine-Trial-Bold-Italic.otf");
 }
 
 h1 {
@@ -333,14 +347,14 @@ h6 {
 }
 
 .header {
-    font-family: 'Playfair Display', serif;
+    font-family: 'GT-Sectra-Display-Trial-Medium';
+    text-transform: lowercase;
     font-size: 4.5vw;
     line-height: 3.8vw;
-    letter-spacing: -0.2vw;
+    letter-spacing: -0.1vw;
     text-align: left;
     border-bottom: 10px solid white;
     border-top: 10px solid white;
-    /* outline: 10px solid black; */
     background: black;
     padding: 1%;
     color: white;
@@ -349,7 +363,7 @@ h6 {
 }
 
 .subheader {
-    font-family: GT-Eesti-Pro-Text-Trial-Book-Italic;
+    font-family: 'GT-Sectra-Fine-Trial-Book-Italic';
     font-size: 3vw;
     letter-spacing: -0.1vw;
     text-align: center;
@@ -391,7 +405,7 @@ h6 {
 }
 
 .content ul {
-    list-style: '▹ ';
+    list-style: '\25B9  ';
     font-family: 'PT Mono';
     color: black;
     font-size: 2.2vw;
@@ -403,15 +417,13 @@ h6 {
 
 .content a {
     text-decoration: none;
-    border-bottom: 2px dashed #ca2b29;
+    border-bottom: 2px solid black;
     color: black;
     transition: 0.7s ease;
 }
 
 .content a:hover {
     text-decoration: none;
-    border-bottom: 2px dashed #4096d3;
-    color: black;
 }
 
 .icons {
@@ -499,7 +511,7 @@ i {
 }
 
 .button {
-    border: 1px solid white;
+    border: 1px solidgrou white;
 }
 
 .knife {
@@ -612,24 +624,23 @@ i {
 }
 
 .about img {
-    max-width: 15%;
+    max-width: 40%;
     border: 1px solid white;
     float: right;
     margin: 2%;
-    margin-top: 7%;
-    margin-bottom:2%;
+    margin-top: 0%;
+    margin-bottom:0%;
     transition: 0.5s ease;
     box-shadow: 3px 3px 0px #4096d3, 0.4em 0.5em 0px rgba(0, 0, 0, 0.15);
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
-    /* filter: black scale(); */
+    border-radius: 50%;
 }
 
 .about img:hover {
     box-shadow: 4px 4px 0px #ca2b29, 12px 12px 0px rgba(0, 0, 0, 0.15);
     -webkit-transform: translateX(-5px);
     transform: translateX(-5px);
-    filter: none;
 }
 
 .footer {
