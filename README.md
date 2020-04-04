@@ -9,4 +9,4 @@ lisajak.com is a lightweight SPA built for mysel featuring motion-based webGL an
 * webGL
 
 # Demo
-View a demo version of can be viewed by visiting [www.lisajak.com](lisajak.com). 
+View a demo version of can be viewed by visiting [lisajak.com](http://lisajak.com/). 
